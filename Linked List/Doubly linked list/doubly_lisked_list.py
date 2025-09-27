@@ -56,7 +56,7 @@ class DoublyLinkedList:
             current = current.next  
         if current is None:  
             return  
-        new_node.next = current.next  #---> 
+        new_node.next = current.next 
         new_node.prev = current  
         if current.next:  
             current.next.prev = new_node  
