@@ -37,7 +37,7 @@ class LinkedList:
         last = self.head  # we need to iterate through the whole linked list in order to append to the end
         while last.next:  
             last = last.next  
-            last.next = new_node 
+        last.next = new_node 
 
     def insert_at_position(self, data, position):  
         new_node = Node(data)  
