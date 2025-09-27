@@ -7,6 +7,7 @@ class Node:
 
 class DoublyLinkedList:  
     def __init__(self):  
+        #note you don't need to have a pointer to the tail but it will make inserting at the end faster
         self.head = None  
         self.tail = None 
 
