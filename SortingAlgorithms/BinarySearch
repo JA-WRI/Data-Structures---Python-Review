@@ -1,0 +1,21 @@
+
+def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
+    arr.sort
+
+    while low <= high:
+        mid = low + (high - low) // 2  # Calculate the middle index
+
+        # Check if the target is present at the middle
+        if arr[mid] == target:
+            return mid
+        # If target is greater, ignore the left half
+        elif arr[mid] < target:
+            low = mid + 1
+        # If target is smaller, ignore the right half
+        else:
+            high = mid - 1
+
+    # If the target is not found in the array
+    return -1
